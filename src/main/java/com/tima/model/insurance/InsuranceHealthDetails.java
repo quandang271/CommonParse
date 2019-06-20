@@ -12,10 +12,11 @@ import java.util.ArrayList;
 
 @ToString
 @Getter
-public class InsuranceHealthDetailModel {
+public class InsuranceHealthDetails {
     private ArrayList<InsuranceHealthModel> insuranceHealthDetails = new ArrayList<InsuranceHealthModel>();
 
-    public InsuranceHealthDetailModel(JsonArray jsonArray){
-        insuranceHealthDetails = TimaInsuranceParseTool.getInstance().parseHealthInsuranceModel(jsonArray);
+    public InsuranceHealthDetails(JsonArray jsonArray){
+        Gson gson = new Gson();
+        insuranceHealthDetails = gson.fromJson(jsonArray,new TypeToken<ArrayList<InsuranceHealthModel>>(){}.getType());
     }
 }
