@@ -3,7 +3,9 @@ package com.tima.model.facebook;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.tima.parse.TimaFacebookParseTool;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Getter;
 import lombok.ToString;
 
 import java.util.ArrayList;
@@ -13,6 +15,8 @@ import java.util.List;
 @ToString
 public  class FBDetailsModel {
     public FBDetailsModel(){};
+
+    @Getter(AccessLevel.NONE)
     protected TimaFacebookParseTool objectParseTool = TimaFacebookParseTool.getInstance();
 
     private FBBasicProfileModel basicProfile ;
@@ -37,13 +41,10 @@ public  class FBDetailsModel {
         loadModel(jsonObject);
     }
 
-    public void loadModel(JsonObject jsonObject){
+    private void loadModel(JsonObject jsonObject){
         if(jsonObject.has("basicProfile") && !jsonObject.get("basicProfile").isJsonNull())
             basicProfile = objectParseTool.parseBasicProfile(jsonObject.getAsJsonObject("basicProfile"));
-//        JsonArray jsonArrayWorks= jsonObject.getAsJsonArray("works");
-//        for(JsonElement element: jsonArrayWorks){
-//            works.add(objectParseTool.parseWorks(element.getAsJsonObject()));
-//        }
+
         if(jsonObject.has("works") && !jsonObject.get("works").isJsonNull())
             works= objectParseTool.parseWorks(jsonObject.getAsJsonArray("works"));
 

@@ -6,6 +6,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 import com.tima.model.facebook.*;
 import connection.Connect;
+import jdk.nashorn.internal.runtime.ParserException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +23,7 @@ public class TimaFacebookParseTool {
     }
 
     private Gson gson = new Gson();
+
 
     // Basic Profile
     public FBBasicProfileModel parseBasicProfile(String jsonObject){
@@ -107,22 +109,38 @@ public class TimaFacebookParseTool {
     }
 
     // Details
-    public FBDetailsModel parseFacebookModel(String jsonObject){
+    public FBDetailsModel parseFacebookDetailsModel(String jsonObject){
         return new FBDetailsModel(jsonObject);
     }
 
-    public FBDetailsModel parseFacebookModel(JsonObject jsonObject){
+    public FBDetailsModel parseFacebookDetailsModel(JsonObject jsonObject){
         return new FBDetailsModel(jsonObject);
+    }
+
+    // Result
+
+    public FBResultModel parseFacebookResultModel(String jsonObject){
+        return new FBResultModel(jsonObject);
+    }
+
+    public FBResultModel parseFacebookResultModel(JsonObject jsonObject) throws ParserException{
+        try{
+            if(jsonObject.get("responseCode").getAsInt()==0 && jsonObject.has("result") && !jsonObject.get("result").isJsonNull()){
+                return new FBResultModel(jsonObject.getAsJsonObject("result"));
+            }
+        } catch (Exception e){
+            throw new ParserException("Object format may be wrong. Cause: " + e.getMessage());
+        }
+        throw new ParserException("Object has reponse not success !");
     }
 
     public static void main(String[] args) {
         Connect connect = new Connect();
-        JsonObject json = connect.getFacebookJsonObjectInfo("100005568973407").getAsJsonObject("result").getAsJsonObject("detail");
+        JsonObject json = connect.getFacebookJsonObjectInfo("100005568973407");
 
-        FBDetailsModel model= TimaFacebookParseTool.getInstance().parseFacebookModel(json);
-        System.out.println(model.getFriends());
-        FBWorksModel fb = TimaFacebookParseTool.getInstance().parseWork(json);
-        System.out.println(fb);
+        FBResultModel model= TimaFacebookParseTool.getInstance().parseFacebookResultModel(json);
+        System.out.println(model.getFbDetailsModel());
+
     }
 
 }

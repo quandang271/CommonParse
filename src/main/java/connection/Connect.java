@@ -14,7 +14,7 @@ import java.util.Iterator;
 public class Connect {
     public String getFacebookInfo(String uid) {
         try {
-            URL url = new URL("http://172.16.10.111:8082/facebook-information/"+uid+"?fields=basic_profile,posts,works,family,friends");
+            URL url = new URL("http://172.16.10.111:8082/facebook-information/100005568973407?fields=basic_profile,posts,works,family,friends");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
             con.setRequestProperty("Content-Type", "application/json");
@@ -101,5 +101,6 @@ public class Connect {
     public static void main(String[] args) {
         Connect c = new Connect();
         System.out.println(c.getSocialInsuranceJsonOnjectInfo("").getAsJsonObject("result").getAsJsonArray("details"));
+     //   System.out.println(c.getFacebookJsonObjectInfo(""));
     }
 }
