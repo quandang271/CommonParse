@@ -64,8 +64,8 @@ public class TimaInsuranceParseTool {
 
     public static void main(String[] args) {
         Connect connect = new Connect();
-        JsonObject jsonObject = connect.getHealthInsuranceJsonObjectInfo("");
-        InsuranceHealthResultModel insur = TimaInsuranceParseTool.getInstance().parseHealthInsuranceResultFromRootObject(jsonObject);
+        JsonObject jsonObject = connect.getSocialInsuranceJsonOnjectInfo("");
+        InsuranceSocialResultModel insur = TimaInsuranceParseTool.getInstance().parseSocialInsuranceResultFromRootObject(jsonObject);
         System.out.println(insur.getDetails().get(0));
 
     }
