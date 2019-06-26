@@ -26,6 +26,16 @@ public class Config {
             properties.load(new FileReader(pathFileConfig));
             if(properties.containsKey("com.tima.common.facebook-crawl.url"))
                 urlFacebook=properties.getProperty("com.tima.common.facebook-crawl.url");
+            if(properties.containsKey("com.tima.common.healthinsurance-crawl.url"))
+                urlHealthInsurance=properties.getProperty("com.tima.common.healthinsurance-crawl.url");
+            if(properties.containsKey("com.tima.common.socialinsurance-crawl.url"))
+                urlSocialInsurance=properties.getProperty("com.tima.common.socialinsurance-crawl.url");
+            if(properties.containsKey("com.tima.common.facebook-crawl.token"))
+                tokenFacebook=properties.getProperty("com.tima.common.facebook-crawl.token");
+            if(properties.containsKey("com.tima.common.healthinsurance-crawl.token"))
+                tokenHealthInsurance=properties.getProperty("com.tima.common.healthinsurance-crawl.token");
+            if(properties.containsKey("com.tima.common.socialinsurance-crawl.token"))
+                tokenSocialInsurance=properties.getProperty("com.tima.common.socialinsurance-crawl.token");
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -33,11 +43,15 @@ public class Config {
     }
 
     private Properties properties = new Properties();
-    private String urlFacebook="";
+    private String urlFacebook="http://172.16.10.111:8082/facebook-information/";
     private String urlHealthInsurance;
     private String urlSocialInsurance;
+    private String tokenFacebook;
+    private String tokenHealthInsurance;
+    private String tokenSocialInsurance;
 
-  //  public String getURLFacebook(String uid, String[] listData){
+
+    //  public String getURLFacebook(String uid, String[] listData){
     public String getURLFacebook(String uid, String params){
 
         return urlFacebook+uid+"?fields="+params;
@@ -45,6 +59,10 @@ public class Config {
 
     public String getURLFacebook(String uid){
         return getURLFacebook(uid, "basic_profile,posts,works,family,friends");
+    }
+
+    public String getTokenFacebook(){
+        return tokenFacebook;
     }
 
 
