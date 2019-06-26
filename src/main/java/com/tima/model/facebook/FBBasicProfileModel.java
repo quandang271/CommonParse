@@ -1,5 +1,6 @@
 package com.tima.model.facebook;
 
+import com.tima.model.TimaBasicEntity;
 import lombok.Data;
 import lombok.Getter;
 import lombok.ToString;

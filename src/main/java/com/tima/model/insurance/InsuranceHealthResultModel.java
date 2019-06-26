@@ -2,6 +2,7 @@ package com.tima.model.insurance;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.tima.model.TimaBasicEntity;
 import com.tima.parse.TimaInsuranceParseTool;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -11,7 +12,7 @@ import java.util.List;
 
 @Getter
 @ToString
-public class InsuranceHealthResultModel {
+public class InsuranceHealthResultModel extends TimaBasicEntity {
     private List<InsuranceHealthModel> details;
     private String referenceCode ="";
     private String status = "";
@@ -39,5 +40,9 @@ public class InsuranceHealthResultModel {
         if(jsonObject.has("statusDes") && !(jsonObject.get("statusDes").isJsonNull())){
             statusDes = jsonObject.get("statusDes").getAsString();
         }
+    }
+
+    public  boolean isDone(){
+        return "DONE".equals(status);
     }
 }

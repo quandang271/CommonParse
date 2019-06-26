@@ -4,7 +4,9 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
+import com.tima.model.TimaBasicEntity;
 import com.tima.model.facebook.*;
+import com.tima.model.insurance.InsuranceHealthResultModel;
 import connection.Connect;
 import jdk.nashorn.internal.runtime.ParserException;
 
@@ -136,7 +138,11 @@ public class TimaFacebookParseTool {
 
     public static void main(String[] args) {
         Connect connect = new Connect();
-        JsonObject json = connect.getFacebookJsonObjectInfo("100005568973407");
+        String uid = "5208983341772692219";
+        String token = "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZWNhc2giLCJhdXRob3JpdGllcyI6WyJST0xFX0ZBQ0VCT09LX0lORk8iXSwiaWF0IjoxNTYwMzIzODMyLCJleHAiOjE1NjI5MTU4MzJ9.WSSv2CXL27CbqLtPy6xnyo39M8zsQaluIcE4NRaIHQCtXxClVJxY_nIc1iEyc3iCj-vURCipF4iETzKED95xjQ";
+        // uid = 100005568973407
+        JsonObject json = connect.getFacebookJsonObjectInfo(uid,token);
+
 
         FBResultModel model= TimaFacebookParseTool.getInstance().parseFacebookResultModel(json);
         System.out.println(model.getFbDetailsModel());

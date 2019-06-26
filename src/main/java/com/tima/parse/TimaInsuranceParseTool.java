@@ -64,9 +64,12 @@ public class TimaInsuranceParseTool {
 
     public static void main(String[] args) {
         Connect connect = new Connect();
-        JsonObject jsonObject = connect.getSocialInsuranceJsonOnjectInfo("");
+//        JsonObject jsonObject = connect.getHealthInsuranceJsonObjectInfo("6372460565776449889");
+//        InsuranceHealthResultModel insur = TimaInsuranceParseTool.getInstance().parseHealthInsuranceResultFromRootObject(jsonObject);
+//        System.out.println(insur.getDetails().get(0));
+        JsonObject jsonObject = connect.getSocialInsuranceJsonOnjectInfo("5208983341772692219");
         InsuranceSocialResultModel insur = TimaInsuranceParseTool.getInstance().parseSocialInsuranceResultFromRootObject(jsonObject);
-        System.out.println(insur.getDetails().get(0));
+        System.out.println(insur);
 
     }
 }

@@ -2,12 +2,13 @@ package com.tima.model.facebook;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.tima.model.TimaBasicEntity;
 import lombok.Getter;
 import lombok.ToString;
 
 @Getter
 @ToString
-public class FBResultModel {
+public class FBResultModel extends TimaBasicEntity {
     private String uid = "";
     private String status = "";
     private String statusDes = "";
@@ -36,5 +37,9 @@ public class FBResultModel {
         if (jsonObject.has("uid") && !(jsonObject.get("uid").isJsonNull())) {
             statusDes =  jsonObject.get("statusDes").getAsString();
         }
+
+    }
+    public  boolean isDone(){
+        return "DONE".equals(status);
     }
 }
