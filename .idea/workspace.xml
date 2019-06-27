@@ -2,17 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe082f18-66af-4476-ac33-b09a17c8f83a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common-model-config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tima/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tima/model/TimaBasicEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tima/model/facebook/FBBasicProfileModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tima/model/facebook/FBBasicProfileModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tima/model/facebook/FBResultModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tima/model/facebook/FBResultModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tima/model/insurance/InsuranceHealthResultModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tima/model/insurance/InsuranceHealthResultModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tima/model/insurance/InsuranceSocialResultModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tima/model/insurance/InsuranceSocialResultModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-model-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tima/parse/TimaFacebookParseTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tima/parse/TimaFacebookParseTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tima/parse/TimaInsuranceParseTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tima/parse/TimaInsuranceParseTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/connection/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/connection/Connect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/url.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tima/config/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tima/config/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tima/parse/TimaFacebookParseTool$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tima/parse/TimaFacebookParseTool$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tima/parse/TimaFacebookParseTool$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tima/parse/TimaFacebookParseTool$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tima/parse/TimaFacebookParseTool$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tima/parse/TimaFacebookParseTool$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tima/parse/TimaFacebookParseTool$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tima/parse/TimaFacebookParseTool$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tima/parse/TimaFacebookParseTool$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tima/parse/TimaFacebookParseTool$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tima/parse/TimaFacebookParseTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tima/parse/TimaFacebookParseTool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tima/parse/TimaInsuranceParseTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tima/parse/TimaInsuranceParseTool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/connection/Connect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/connection/Connect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/url.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/common-entity-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,9 +36,18 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/parse/TimaInsuranceParseTool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/model/insurance/InsuranceSocialResultModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
+            <state relative-caret-position="510">
               <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
               <folding>
                 <element signature="e#1516#1517#0" expanded="true" />
@@ -52,12 +69,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/model/facebook/FBResultModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="43" selection-end-column="5" />
-              <folding>
-                <element signature="e#1331#1332#0" expanded="true" />
-                <element signature="e#1360#1361#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="32" selection-start-column="32" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/connection/Connect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="27" column="29" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -65,7 +87,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/model/insurance/InsuranceHealthResultModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
+            <state relative-caret-position="525">
               <caret line="47" selection-start-line="47" selection-end-line="47" />
               <folding>
                 <element signature="e#1515#1516#0" expanded="true" />
@@ -87,48 +109,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/parse/TimaFacebookParseTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="151" column="1" lean-forward="true" selection-start-line="151" selection-start-column="1" selection-end-line="151" selection-end-column="1" />
-              <folding>
-                <element signature="e#4196#4197#0" expanded="true" />
-                <element signature="e#4248#4249#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="723">
+              <caret line="148" selection-start-line="148" selection-end-line="148" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/model/TimaBasicEntity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/config/Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="330">
+              <caret line="27" column="89" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/config/Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#324#325#0" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#1214#1215#0" expanded="true" />
-                <element signature="e#1270#1271#0" expanded="true" />
-                <element signature="e#1941#1942#0" expanded="true" />
-                <element signature="e#1982#1983#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common-model-config.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -151,16 +156,17 @@
         <option value="$PROJECT_DIR$/src/test/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/connection/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/url.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/connection/Connect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tima/model/facebook/FBBasicProfileModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tima/parse/TimaInsuranceParseTool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tima/model/facebook/FBResultModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tima/parse/TimaFacebookParseTool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tima/model/insurance/InsuranceHealthResultModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tima/model/insurance/InsuranceSocialResultModel.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tima/config/Config.java" />
+        <option value="$PROJECT_DIR$/com.tima.config.properties" />
         <option value="$PROJECT_DIR$/common-model-config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tima/parse/TimaInsuranceParseTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/connection/Connect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tima/parse/TimaFacebookParseTool.java" />
       </list>
     </option>
   </component>
@@ -180,18 +186,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="484" />
-    <option name="y" value="174" />
-    <option name="width" value="1311" />
+    <option name="x" value="384" />
+    <option name="y" value="92" />
+    <option name="width" value="1490" />
     <option name="height" value="988" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -200,14 +198,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="CommonParse" type="b2602c69:ProjectViewProjectNode" />
               <item name="CommonParse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommonParse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommonParse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommonParse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommonParse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommonParse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommonParse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommonParse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommonParse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="connection" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -216,6 +240,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../TopFriend" />
@@ -238,13 +263,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Config">
+  <component name="RunManager" selected="Application.TimaFacebookParseTool">
     <configuration name="Config" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tima.config.Config" />
       <module name="common-entity" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tima.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Connect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="connection.Connect" />
+      <module name="common-entity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="connection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -280,9 +318,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Config" />
-        <item itemvalue="Application.TimaInsuranceParseTool" />
         <item itemvalue="Application.TimaFacebookParseTool" />
+        <item itemvalue="Application.Connect" />
+        <item itemvalue="Application.TimaInsuranceParseTool" />
+        <item itemvalue="Application.Config" />
       </list>
     </recent_temporary>
   </component>
@@ -311,18 +350,27 @@
       <workItem from="1561344543337" duration="3619000" />
       <workItem from="1561461009681" duration="769000" />
       <workItem from="1561514147461" duration="31000" />
-      <workItem from="1561532924582" duration="12142000" />
+      <workItem from="1561532924582" duration="15320000" />
+      <workItem from="1561599970530" duration="604000" />
     </task>
+    <task id="LOCAL-00001" summary="assa">
+      <created>1561546131600</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561546131600</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20831000" />
+    <option name="totallyTimeSpent" value="24613000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18317653" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18040952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -331,7 +379,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1187905" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29589632" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -355,6 +403,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="assa" />
+    <option name="LAST_COMMIT_MESSAGE" value="assa" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/model/facebook/FBFamilyMembersModel.java">
@@ -389,9 +441,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/quaasnnsa">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/quaasnnsa" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/exception/ParseException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -399,13 +449,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/url.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/url.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/model/facebook/FBGroupsModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -420,13 +464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/connection/Connect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/connection/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -434,16 +471,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/model/TimaBasicEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weerwre.properties" />
+    <entry file="file://$PROJECT_DIR$/com.tima.config.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/parse/TimaInsuranceParseTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="71" column="32" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
+        <state relative-caret-position="975">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/model/insurance/InsuranceSocialResultModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="510">
           <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding>
             <element signature="e#1516#1517#0" expanded="true" />
@@ -461,11 +507,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/model/facebook/FBResultModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="43" selection-end-column="5" />
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/connection/Connect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/model/insurance/InsuranceHealthResultModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
           <folding>
-            <element signature="e#1331#1332#0" expanded="true" />
-            <element signature="e#1360#1361#0" expanded="true" />
+            <element signature="e#1515#1516#0" expanded="true" />
+            <element signature="e#1559#1560#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -477,58 +537,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/model/TimaBasicEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/config/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/model/insurance/InsuranceHealthResultModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="330">
+          <caret line="27" column="89" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="89" />
           <folding>
-            <element signature="e#1515#1516#0" expanded="true" />
-            <element signature="e#1559#1560#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/parse/TimaFacebookParseTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="151" column="1" lean-forward="true" selection-start-line="151" selection-start-column="1" selection-end-line="151" selection-end-column="1" />
-          <folding>
-            <element signature="e#4196#4197#0" expanded="true" />
-            <element signature="e#4248#4249#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="723">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weerwre.properties">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/common-model-config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tima/config/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#1214#1215#0" expanded="true" />
-            <element signature="e#1270#1271#0" expanded="true" />
-            <element signature="e#1941#1942#0" expanded="true" />
-            <element signature="e#1982#1983#0" expanded="true" />
-          </folding>
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
         </state>
       </provider>
     </entry>
