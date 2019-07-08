@@ -3,6 +3,7 @@ package com.tima.parse;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 import com.tima.config.Config;
 import com.tima.model.TimaBasicEntity;
@@ -30,11 +31,14 @@ public class TimaFacebookParseTool {
 
     // Basic Profile
     public FBBasicProfileModel parseBasicProfile(String jsonObject){
-        return gson.fromJson(jsonObject, FBBasicProfileModel.class);
+      //  return gson.fromJson(jsonObject, FBBasicProfileModel.class);
+        JsonParser jsonParser= new JsonParser();
+        return ObjectParseTool.getInstance().parseJsonObjectToFBBasicProfileModel((JsonObject) jsonParser.parse(jsonObject));
     }
 
     public FBBasicProfileModel parseBasicProfile(JsonObject jsonObject){
-        return gson.fromJson(jsonObject, FBBasicProfileModel.class);
+       // return gson.fromJson(jsonObject, FBBasicProfileModel.class);
+        return ObjectParseTool.getInstance().parseJsonObjectToFBBasicProfileModel(jsonObject);
     }
 
     // Education
@@ -127,6 +131,7 @@ public class TimaFacebookParseTool {
     }
 
     public FBResultModel parseFacebookResultModel(JsonObject jsonObject) throws ParserException{
+        new FBResultModel(jsonObject.getAsJsonObject("result"));
         try{
             if(jsonObject.get("responseCode").getAsInt()==0 && jsonObject.has("result") && !jsonObject.get("result").isJsonNull()){
                 return new FBResultModel(jsonObject.getAsJsonObject("result"));
@@ -138,15 +143,54 @@ public class TimaFacebookParseTool {
     }
 
     public static void main(String[] args) {
+        String str = "{\n" +
+                "  \"responseCode\": 0,\n" +
+                "  \"mess\": \"Thành công\",\n" +
+                "  \"result\": {\n" +
+                "    \"uid\": \"100000916008785\",\n" +
+                "    \"status\": \"DONE\",\n" +
+                "    \"statusDes\": \"Thành công\",\n" +
+                "    \"detail\": {\n" +
+                "      \"basicProfile\": {\n" +
+                "        \"about\": null,\n" +
+                "        \"currentLocationCity\": null,\n" +
+                "        \"currentLocationCountry\": null,\n" +
+                "        \"currentLocationLatitude\": null,\n" +
+                "        \"currentLocationLocationId\": null,\n" +
+                "        \"currentLocationLongitude\": null,\n" +
+                "        \"currentLocationName\": null,\n" +
+                "        \"currentLocationState\": null,\n" +
+                "        \"currentLocationZip\": null,\n" +
+                "        \"friendCount\": 557,\n" +
+                "        \"interests\": \"\",\n" +
+                "        \"name\": \"�����t Luy���n\",\n" +
+                "        \"notesCount\": 0,\n" +
+                "        \"profileUpdateTime\": \"1552567206\",\n" +
+                "        \"relationshipStatus\": \"\",\n" +
+                "        \"sex\": \"male\",\n" +
+                "        \"subscriberCount\": \"0\",\n" +
+                "        \"thirdPartyId\": \"bbofFeJfsgC0xiRWUhWzGO43GFs\",\n" +
+                "        \"timestamp\": \"1554516980370\",\n" +
+                "        \"uid\": 100000916008785,\n" +
+                "        \"username\": \"luthada\"\n" +
+                "      },\n" +
+                "      \"works\": null,\n" +
+                "      \"familyMembers\": null,\n" +
+                "      \"education\": null,\n" +
+                "      \"friends\": null,\n" +
+                "      \"groups\": null,\n" +
+                "      \"feedBasic\": null\n" +
+                "    }\n" +
+                "  }\n" +
+                "}";
         Connect connect = new Connect();
-        String uid = "5208983341772692219";
+        String uid = "100000916008785";
         String token = Config.getInstance().getTokenFacebook();
         // uid = 100005568973407
-        FBResultModel fb = connect.getFacebookModelInfo(uid,token);
-
-
-        System.out.println(fb);
-
+        JsonObject jsonObject = connect.getFacebookJsonObjectInfo(uid,Config.getInstance().getTokenFacebook());
+        FBResultModel fbResultModel = TimaFacebookParseTool.getInstance().parseFacebookResultModel(new JsonParser().parse(str).getAsJsonObject());
+        System.out.println(fbResultModel);
+//        System.out.println(jsonObject.get("result"));
     }
 
 }

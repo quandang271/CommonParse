@@ -3,13 +3,10 @@ package com.tima.parse;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import com.google.gson.reflect.TypeToken;
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
 import com.tima.model.insurance.*;
 import connection.Connect;
 import jdk.nashorn.internal.runtime.ParserException;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class TimaInsuranceParseTool {
@@ -26,7 +23,8 @@ public class TimaInsuranceParseTool {
 
     // Health
     public List<InsuranceHealthModel> parseListHealthModel(JsonArray jsonArray){
-        return gson.fromJson(jsonArray,new TypeToken<ArrayList<InsuranceHealthModel>>(){}.getType());
+      //  return gson.fromJson(jsonArray,new TypeToken<ArrayList<InsuranceHealthModel>>(){}.getType());
+        return ObjectParseTool.getInstance().parseJsonArrayToInsuranceHealthModelArray(jsonArray);
     }
 
     public InsuranceHealthResultModel parseHealthInsuranceResultFromRootObject(JsonObject jsonObject) throws ParserException{
@@ -44,7 +42,8 @@ public class TimaInsuranceParseTool {
 
     // Social
     public List<InsuranceSocialModel> parseListSocialModel(JsonArray jsonArray){
-        return gson.fromJson(jsonArray,new TypeToken<ArrayList<InsuranceSocialModel>>(){}.getType());
+     //   return gson.fromJson(jsonArray,new TypeToken<ArrayList<InsuranceSocialModel>>(){}.getType());
+        return ObjectParseTool.getInstance().parseJsonArrayToInsuranceSocialModelArray(jsonArray);
     }
 
 
@@ -64,12 +63,19 @@ public class TimaInsuranceParseTool {
 
     public static void main(String[] args) {
         Connect connect = new Connect();
-        JsonObject jsonObject = connect.getHealthInsuranceJsonObjectInfo("6372460565776449889");
-        InsuranceHealthResultModel insur = TimaInsuranceParseTool.getInstance().parseHealthInsuranceResultFromRootObject(jsonObject);
-        System.out.println(insur.getDetails().get(0));
-//        JsonObject jsonObject = connect.getSocialInsuranceJsonOnjectInfo("5208983341772692219");
-//        InsuranceSocialResultModel insur = TimaInsuranceParseTool.getInstance().parseSocialInsuranceResultFromRootObject(jsonObject);
-//        System.out.println(insur);
+//        JsonObject jsonObject = connect.getHealthInsuranceJsonObjectInfo("6372460565776449889");
+//        InsuranceHealthResultModel insur = TimaInsuranceParseTool.getInstance().parseHealthInsuranceResultFromRootObject(jsonObject);
+//        System.out.println(insur.getDetails().get(0));
+        JsonObject jsonObject1 = connect.getSocialInsuranceJsonObjectInfo("5208983341772692219");
+        InsuranceSocialResultModel insur1 = TimaInsuranceParseTool.getInstance().parseSocialInsuranceResultFromRootObject(jsonObject1);
+        System.out.println(insur1.getDetails());
+//        JsonArray jsonArray = jsonObject.get("result").getAsJsonObject().getAsJsonArray("details");
+//        System.out.println(TimaInsuranceParseTool.getInstance().parseListSocialModel(jsonArray));
+
+        // health 6372460565776449889
+        JsonObject jsonObject2 = connect.getHealthInsuranceJsonObjectInfo("6372460565776449889");
+        InsuranceHealthResultModel insur2 = TimaInsuranceParseTool.getInstance().parseHealthInsuranceResultFromRootObject(jsonObject2);
+        System.out.println(insur2.getDetails());
 
     }
 }

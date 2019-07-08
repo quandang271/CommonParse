@@ -1,13 +1,16 @@
 package com.tima.model.facebook;
 
 import com.tima.model.TimaBasicEntity;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
 import lombok.ToString;
 
 @Getter
 @ToString
+@AllArgsConstructor()
 public class FBBasicProfileModel {
+    private Long birthdayDate;
     private String about;
     private String currentLocationCity;
     private String currentLocationCountry;

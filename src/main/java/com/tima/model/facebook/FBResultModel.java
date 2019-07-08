@@ -31,10 +31,10 @@ public class FBResultModel extends TimaBasicEntity {
         if (jsonObject.has("uid") && !(jsonObject.get("uid").isJsonNull())) {
             uid =  jsonObject.get("uid").getAsString();
         }
-        if (jsonObject.has("uid") && !(jsonObject.get("uid").isJsonNull())) {
+        if (jsonObject.has("status") && !(jsonObject.get("status").isJsonNull())) {
             status =  jsonObject.get("status").getAsString();
         }
-        if (jsonObject.has("uid") && !(jsonObject.get("uid").isJsonNull())) {
+        if (jsonObject.has("statusDes") && !(jsonObject.get("statusDes").isJsonNull())) {
             statusDes =  jsonObject.get("statusDes").getAsString();
         }
 

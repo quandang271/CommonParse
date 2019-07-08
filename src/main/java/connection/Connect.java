@@ -76,7 +76,7 @@ public class Connect {
         }
     }
 
-    public JsonObject getSocialInsuranceJsonOnjectInfo(String uid){
+    public JsonObject getSocialInsuranceJsonObjectInfo(String uid){
         return new JsonParser().parse(getSocialInsuranceInfo(uid)).getAsJsonObject();
     }
 
@@ -94,7 +94,6 @@ public class Connect {
 
     public static void main(String[] args) {
         Connect c = new Connect();
-        System.out.println(c.getSocialInsuranceJsonOnjectInfo("").getAsJsonObject("result").getAsJsonArray("details"));
-        System.out.println(c.getFacebookInfo("5208983341772692219",Config.getInstance().getTokenFacebook()));
+        System.out.println(c.getSocialInsuranceJsonObjectInfo("5208983341772692219"));
      }
 }

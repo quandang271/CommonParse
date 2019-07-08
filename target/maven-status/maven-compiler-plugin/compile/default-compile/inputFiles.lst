@@ -11,6 +11,7 @@
 /home/tuyentn/Soft/CommonParse/src/main/java/com/tima/model/insurance/InsuranceHealthResultModel.java
 /home/tuyentn/Soft/CommonParse/src/main/java/com/tima/model/facebook/FBFeedBasicModel.java
 /home/tuyentn/Soft/CommonParse/src/main/java/com/tima/model/facebook/FBFamilyMembersModel.java
+/home/tuyentn/Soft/CommonParse/src/main/java/com/tima/parse/ObjectParseTool.java
 /home/tuyentn/Soft/CommonParse/src/main/java/connection/Main.java
 /home/tuyentn/Soft/CommonParse/src/main/java/connection/Connect.java
 /home/tuyentn/Soft/CommonParse/src/main/java/com/tima/model/facebook/FBBasicProfileModel.java

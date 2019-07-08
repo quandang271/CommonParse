@@ -1,5 +1,7 @@
 package com.tima.model.insurance;
 
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
 
@@ -7,15 +9,12 @@ import java.sql.Timestamp;
 
 @Getter
 @ToString
+@AllArgsConstructor()
 public class InsuranceHealthModel {
-    private String birthDate;
+    private long birthDate;
     private String expiredDate;
     private String insuranceCode;
-    private Timestamp lastUpdate;
+    private String lastUpdate;
     private String name;
     private String startDate;
-
-    public InsuranceHealthModel(String jsonObject){
-
-    }
 }
