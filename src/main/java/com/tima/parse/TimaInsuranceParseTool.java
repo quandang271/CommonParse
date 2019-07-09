@@ -27,17 +27,20 @@ public class TimaInsuranceParseTool {
         return ObjectParseTool.getInstance().parseJsonArrayToInsuranceHealthModelArray(jsonArray);
     }
 
-    public InsuranceHealthResultModel parseHealthInsuranceResultFromRootObject(JsonObject jsonObject) throws ParserException{
+    public InsuranceHealthResultModel parseHealthInsuranceResultFromRootObject(JsonObject jsonObject){
         try
         {
             if(jsonObject.get("responseCode").getAsInt()==0 && jsonObject.has("result") && !jsonObject.get("result").isJsonNull()){
                 jsonObject = jsonObject.getAsJsonObject("result");
                 return new InsuranceHealthResultModel(jsonObject);
             }
+            else
+                return null;
         } catch (Exception e){
-            throw new ParserException("Object format may be wrong. Cause: " + e.getMessage());
+            return null;
+          //  throw new ParserException("Object format may be wrong. Cause: " + e.getMessage());
         }
-        throw new ParserException("Object has reponse not success !");
+       // throw new ParserException("Object has reponse not success !");
     }
 
     // Social
@@ -47,17 +50,19 @@ public class TimaInsuranceParseTool {
     }
 
 
-    public InsuranceSocialResultModel parseSocialInsuranceResultFromRootObject(JsonObject jsonObject) throws ParserException{
+    public InsuranceSocialResultModel parseSocialInsuranceResultFromRootObject(JsonObject jsonObject) {
         try
         {
             if(jsonObject.get("responseCode").getAsInt()==0 && jsonObject.has("result") && !jsonObject.get("result").isJsonNull()){
             jsonObject = jsonObject.getAsJsonObject("result");
             return new InsuranceSocialResultModel(jsonObject);
         }
+            else return null;
         } catch (Exception e){
-            throw new ParserException("Object format may be wrong. Cause: " + e.getMessage());
+            return null;
+          //  throw new ParserException("Object format may be wrong. Cause: " + e.getMessage());
         }
-        throw new ParserException("Object has reponse not success !");
+      //  throw new ParserException("Object has reponse not success !");
     }
 
 

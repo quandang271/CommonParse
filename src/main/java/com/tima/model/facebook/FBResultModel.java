@@ -15,6 +15,7 @@ public class FBResultModel extends TimaBasicEntity {
     FBDetailsModel fbDetailsModel;
 
     public FBResultModel(String jsonObject){
+      //  loadModel(new JsonParser().parse(jsonObject).getAsJsonObject());
         loadModel(new JsonParser().parse(jsonObject).getAsJsonObject());
     }
 

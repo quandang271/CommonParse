@@ -131,16 +131,16 @@ public class ObjectParseTool {
             public InsuranceHealthModel deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
            //     JsonObject jsonObject = json.getAsJsonObject();
 
-                Long birthDate = (jsonObject.has("about") && !jsonObject.get("about").isJsonNull()) ?covertStringDateInsurance(jsonObject.get("birthDate").getAsString()):0;
+                Long birthDate = (jsonObject.has("birthDate") && !jsonObject.get("birthDate").isJsonNull()) ?covertStringDateInsurance(jsonObject.get("birthDate").getAsString()):0;
 
 
                 return new InsuranceHealthModel(
                         birthDate,
-                        jsonObject.get("expiredDate").toString(),
-                        jsonObject.get("insuranceCode").toString(),
-                        jsonObject.get("lastUpdate").toString(),
-                        jsonObject.get("name").toString(),
-                        jsonObject.get("startDate").toString()
+                        (jsonObject.has("expiredDate") && !jsonObject.get("expiredDate").isJsonNull()) ?jsonObject.get("expiredDate").toString():null,
+                        (jsonObject.has("insuranceCode") && !jsonObject.get("insuranceCode").isJsonNull()) ?jsonObject.get("insuranceCode").toString():null,
+                        (jsonObject.has("lastUpdate") && !jsonObject.get("lastUpdate").isJsonNull()) ?jsonObject.get("lastUpdate").toString():null,
+                        (jsonObject.has("name") && !jsonObject.get("name").isJsonNull()) ?jsonObject.get("name").toString():null,
+                        (jsonObject.has("startDate") && !jsonObject.get("startDate").isJsonNull()) ?jsonObject.get("startDate").toString():null
                 );
             }
         };
@@ -168,20 +168,18 @@ public class ObjectParseTool {
             public InsuranceSocialModel deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
                // JsonObject jsonObject = json.getAsJsonObject();
 
-                Long dateOfBirth = new Long(
-                        covertStringDateInsurance(jsonObject.get("dateOfBirth").getAsString())
-                );
+                Long dateOfBirth = (jsonObject.has("dateOfBirth") && !jsonObject.get("dateOfBirth").isJsonNull()) ?covertStringDateInsurance(jsonObject.get("dateOfBirth").getAsString()):0;
 
 
                 return new InsuranceSocialModel(
-                        jsonObject.get("insuranceCode").toString(),
-                        jsonObject.get("personalCode").toString(),
-                        jsonObject.get("name").toString(),
-                        jsonObject.get("gender").toString(),
+                        (jsonObject.has("insuranceCode") && !jsonObject.get("insuranceCode").isJsonNull()) ?jsonObject.get("insuranceCode").toString():null,
+                        (jsonObject.has("personalCode") && !jsonObject.get("personalCode").isJsonNull()) ?jsonObject.get("personalCode").toString():null,
+                        (jsonObject.has("name") && !jsonObject.get("name").isJsonNull()) ?jsonObject.get("name").toString():null,
+                        (jsonObject.has("gender") && !jsonObject.get("gender").isJsonNull()) ?jsonObject.get("gender").toString():null,
                         dateOfBirth,
-                        jsonObject.get("familyCode").toString(),
-                        jsonObject.get("address").toString(),
-                        jsonObject.get("lastUpdate").toString()
+                        (jsonObject.has("familyCode") && !jsonObject.get("familyCode").isJsonNull()) ?jsonObject.get("familyCode").toString():null,
+                        (jsonObject.has("address") && !jsonObject.get("address").isJsonNull()) ?jsonObject.get("address").toString():null,
+                        (jsonObject.has("lastUpdate") && !jsonObject.get("lastUpdate").isJsonNull()) ?jsonObject.get("lastUpdate").toString():null
 
                 );
             }

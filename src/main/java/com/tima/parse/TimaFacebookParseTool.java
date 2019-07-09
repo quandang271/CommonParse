@@ -126,7 +126,8 @@ public class TimaFacebookParseTool {
 
     // Result
 
-    public FBResultModel parseFacebookResultModel(String jsonObject){
+    public FBResultModel parseFacebookResultModel(String jsonObject) throws ParserException{
+       // return parseFacebookResultModel(new JsonParser().parse(jsonObject).getAsJsonObject());
         return new FBResultModel(jsonObject);
     }
 
@@ -183,12 +184,12 @@ public class TimaFacebookParseTool {
                 "    }\n" +
                 "  }\n" +
                 "}";
-        Connect connect = new Connect();
-        String uid = "100000916008785";
-        String token = Config.getInstance().getTokenFacebook();
+//        Connect connect = new Connect();
+//        String uid = "100000916008785";
+//        String token = Config.getInstance().getTokenFacebook();
         // uid = 100005568973407
-        JsonObject jsonObject = connect.getFacebookJsonObjectInfo(uid,Config.getInstance().getTokenFacebook());
-        FBResultModel fbResultModel = TimaFacebookParseTool.getInstance().parseFacebookResultModel(new JsonParser().parse(str).getAsJsonObject());
+//        JsonObject jsonObject = connect.getFacebookJsonObjectInfo(uid,Config.getInstance().getTokenFacebook());
+        FBResultModel fbResultModel = TimaFacebookParseTool.getInstance().parseFacebookResultModel(str);
         System.out.println(fbResultModel);
 //        System.out.println(jsonObject.get("result"));
     }
